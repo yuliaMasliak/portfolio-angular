@@ -1,0 +1,22 @@
+<ngx-slick-carousel
+  class="carousel"
+  #slickModal="slick-carousel"
+  [config]="slideConfig"
+  (init)="slickInit($event)"
+  (breakpoint)="breakpoint($event)"
+  (afterChange)="afterChange($event)"
+  (beforeChange)="beforeChange($event)"
+>
+  <div
+    ngxSlickItem
+    *ngFor="let slide of skills"
+    class="slide"
+  >
+    <img
+      src="{{ slide.img }}"
+      alt=""
+      width="70"
+    />
+  </div>
+</ngx-slick-carousel>
+

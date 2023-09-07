@@ -1,0 +1,19 @@
+.slogan-container {
+  background-color: #f8f9fa;
+  p {
+    max-width: 60%;
+    font-size: 38px;
+    margin: 0px auto;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px 0px;
+    font-style: italic;
+  }
+}
+@media screen and (max-width: 1000px) {
+  p {
+    max-width: 90%;
+    font-size: 26px !important;
+  }
+}

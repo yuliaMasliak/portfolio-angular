@@ -1,0 +1,21 @@
+$orange: rgb(228, 100, 15);
+$darkviolet: rgb(58, 17, 97);
+
+.footer {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  height: 100px;
+}
+fa-icon {
+  color: $darkviolet;
+  cursor: pointer;
+}
+
+fa-icon:hover {
+  transition: all 0.3s;
+  color: $orange;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

@@ -1,0 +1,70 @@
+<footer>
+  <div class="footer">
+    <a
+      class="footer_item"
+      href="https://github.com/yuliaMasliak"
+      target="_blank"
+      title="GitHub"
+    >
+      <fa-icon
+        [icon]="faGithub"
+        [@openClose]="isOpen ? 'open' : 'closed'"
+      ></fa-icon>
+    </a>
+    <a
+      class="footer_item"
+      href="https://www.linkedin.com/in/yulia-masliak-b3a6ba7a/"
+      target="_blank"
+      title="LinkedIn"
+    >
+      <fa-icon
+        [icon]="faLinkedinIn"
+        [@openClose]="isOpen ? 'open' : 'closed'"
+      ></fa-icon>
+    </a>
+    <a
+      class="footer_item"
+      href="mailto:masliakyuliia@gmail.com"
+      target="_blank"
+      title="Gmail"
+    >
+      <fa-icon
+        [icon]="faEnvelope"
+        [@openClose]="isOpen ? 'open' : 'closed'"
+      ></fa-icon>
+    </a>
+    <a
+      class="footer_item"
+      href="tel:+380952805398"
+      target="_blank"
+      title="Phone"
+    >
+      <fa-icon
+        [icon]="faPhone"
+        [@openClose]="isOpen ? 'open' : 'closed'"
+      ></fa-icon>
+    </a>
+    <a
+      class="footer_item"
+      href="https://t.me/yuyuliaaa"
+      target="_blank"
+      title="Telegram"
+    >
+      <fa-icon
+        [icon]="faTelegram"
+        [@openClose]="isOpen ? 'open' : 'closed'"
+      ></fa-icon>
+    </a>
+    <a
+      class="footer_item"
+      target="_blank"
+      title="Share profile"
+    >
+      <fa-icon
+        [icon]="faShareNodes"
+        [@openClose]="isOpen ? 'open' : 'closed'"
+        (click)="shareProfile()"
+      ></fa-icon>
+    </a>
+  </div>
+</footer>

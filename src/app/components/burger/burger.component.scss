@@ -1,0 +1,35 @@
+$orange: rgb(228, 100, 15);
+$darkviolet: rgb(58, 17, 97);
+.burger-content {
+  position: absolute;
+  top: 0px;
+  width: fit-content;
+  padding: 20px;
+  background-color: #dbe6f0f3;
+  z-index: 99;
+  border-bottom-right-radius: 8px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  ul {
+    list-style: none;
+    margin-bottom: 0px;
+    margin-top: 16px;
+    text-align: start;
+    padding: 10px;
+    li {
+      margin-bottom: 15px;
+      text-decoration: none;
+      a {
+        color: $darkviolet;
+        margin-left: 10px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        text-decoration: none;
+      }
+      a:hover {
+        color: $orange;
+      }
+    }
+  }
+}

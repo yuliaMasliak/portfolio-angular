@@ -1,0 +1,67 @@
+<header>
+  <div *ngIf="isSmallScreen"
+    ><img
+      src="../../../assets/burger-logo.png"
+      alt="logo"
+      id="burger-logo"
+      (click)="toggleBurger()"
+  /></div>
+  <div *ngIf="!isSmallScreen">
+    <span class="logo">
+      <img
+        src="./assets/logo.gif"
+        alt="rsschool3-logo"
+        width="80"
+        (click)="toHome()"
+    /></span>
+    <nav>
+      <ul>
+        <li
+          ><a
+            title="Go to projects"
+            (click)="toHome()"
+            >Home</a
+          ></li
+        >
+        <li
+          ><a
+            title="Go to projects"
+            (click)="toProjects()"
+            >Projects</a
+          ></li
+        >
+
+        <li
+          ><a
+            title="Contact form"
+            (click)="toggleContactForm()"
+            >Contact me</a
+          ></li
+        >
+        <li
+          ><button (click)="downloadCV()"
+            >Download CV&nbsp;
+            <fa-icon
+              [icon]="faCircleDown"
+              size="lg"
+            ></fa-icon></button
+        ></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div *ngIf="isModal"
+  ><app-contact-form> </app-contact-form>
+  <div
+    class="modal-overlap"
+    (click)="toggleContactForm()"
+  ></div>
+</div>
+<div *ngIf="isBurgerMenu"
+  ><app-burger></app-burger>
+  <div
+    class="modal-overlap"
+    (click)="toggleBurger()"
+  ></div
+></div>

@@ -1,0 +1,45 @@
+<div class="form-block">
+  <form
+    *ngIf="!isSubmitted"
+    class="form"
+    name="contact-me"
+    id="contact-form"
+    [formGroup]="feedbackForm"
+    (ngSubmit)="onSubmit()"
+  >
+    <div class="title">Leave your message</div>
+    <br />
+    <mat-form-field>
+      <mat-label>Enter your email</mat-label>
+      <input
+        formControlName="Email"
+        type="email"
+        name="Email"
+        matInput
+        placeholder="pat@example.com"
+      /> </mat-form-field
+    ><br />
+    <mat-form-field class="example-full-width">
+      <mat-label>Leave a comment</mat-label>
+      <textarea
+        formControlName="Message"
+        name="Message"
+        matInput
+        placeholder="Ex. It makes me feel..."
+      ></textarea></mat-form-field
+    ><br />
+
+    <button
+      mat-raised-button
+      type="submit"
+      [disabled]="feedbackForm.invalid"
+      >SUBMIT</button
+    >
+  </form>
+  <div
+    *ngIf="isSubmitted"
+    class="success"
+  >
+    Message sent successfully!
+  </div>
+</div>
