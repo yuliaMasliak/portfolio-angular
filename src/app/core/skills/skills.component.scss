@@ -9,7 +9,24 @@
 .carousel {
   display: flex;
   justify-content: space-around;
-  width: 88%;
+  width: 78%;
   margin: auto;
+
+  .slide {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    flex-direction: column;
+    text-align: center;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+    .slide-name {
+      text-align: center;
+      color: grey;
+    }
+  }
 }
 

@@ -69,9 +69,10 @@ export class SkillsComponent {
     }
   ];
   slideConfig = {
-    slidesToShow: 8,
+    slidesToShow: 9,
     slidesToScroll: 1,
     autoplay: true,
+    speed: 2000,
     autoplaySpeed: 2000,
     pauseOnHover: true,
     infinite: true
